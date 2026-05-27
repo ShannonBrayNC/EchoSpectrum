@@ -1,0 +1,21 @@
+{
+  "profileName": "EchoSpectrum Edge Node",
+  "platform": "EchoSpectrum",
+  "mode": "rx-only",
+  "sensorProfile": "HackRF One",
+  "antennaProfile": "Proxicast ANT-128-004",
+  "deploymentTargets": [
+    "Ubuntu 22.04",
+    "Raspberry Pi 5"
+  ],
+  "telemetryContracts": [
+    "rf.researchSession.v1",
+    "rf.complianceDecision.v1",
+    "rf.sensorNode.v1"
+  ],
+  "governance": {
+    "etsRequired": true,
+    "allowTransmit": false,
+    "auditLogging": true
+  }
+}
