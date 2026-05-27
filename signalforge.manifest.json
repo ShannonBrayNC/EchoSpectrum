@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "EchoSpectrum",
+    "repository": "ShannonBrayNC/EchoSpectrum",
+    "domain": "rf-observability",
+    "parentBrand": "Lantern Protocol",
+    "ventureBrand": "EchoMedia.ai",
+    "mission": "Lawful receive-only RF observability, spectrum research, and civic resilience analysis."
+  },
+  "governance": {
+    "mode": "ets-aligned",
+    "defaultSafetyPosture": "rx-only",
+    "requiresHumanApprovalFor": [
+      "any transmit-capable feature",
+      "hardware integrations that can emit RF",
+      "protected-spectrum research publication",
+      "field studies involving third-party infrastructure"
+    ],
+    "prohibitedCapabilities": [
+      "jamming",
+      "deauthentication",
+      "packet injection",
+      "cellular interception",
+      "IMSI catcher behavior",
+      "spoofing public safety infrastructure",
+      "autonomous RF transmission"
+    ]
+  },
+  "crossProductIntegrations": {
+    "SignalForge": {
+      "role": "deployment, orchestration, environment manifests, policy-gated routing",
+      "contracts": [
+        "rf.researchSession.v1",
+        "rf.complianceDecision.v1",
+        "rf.sensorNode.v1"
+      ]
+    },
+    "ETS": {
+      "role": "ethics, trust, consent, evidence and audit governance",
+      "contracts": [
+        "trust.auditEvent.v1",
+        "policy.reviewDecision.v1"
+      ]
+    },
+    "Christina": {
+      "role": "sprint planning, issue selection, implementation runner",
+      "entrypoints": [
+        "config/christina.runner.json",
+        "tools/christina/Invoke-ChristinaSprintRunner.ps1"
+      ]
+    },
+    "OpsHelm": {
+      "role": "incident correlation and customer-facing operational reporting",
+      "contracts": [
+        "incident.observation.v1",
+        "support.rfFinding.v1"
+      ]
+    },
+    "EchoChamber": {
+      "role": "translation and narrated research brief generation",
+      "contracts": [
+        "brief.translationRequest.v1",
+        "brief.audioNarrationRequest.v1"
+      ]
+    },
+    "LanternCivic": {
+      "role": "civic resilience research, public-interest reporting, representative dashboards",
+      "contracts": [
+        "civic.infrastructureObservation.v1"
+      ]
+    }
+  },
+  "deployment": {
+    "local": ["Ubuntu 22.04", "Python 3.11", "HackRF One"],
+    "azureTargets": ["Azure Container Apps", "Azure Static Web Apps", "Azure Blob Storage", "Azure PostgreSQL", "Application Insights"],
+    "edgeTargets": ["Raspberry Pi", "x64 Ubuntu field laptop"]
+  }
+}
