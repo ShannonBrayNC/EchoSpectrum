@@ -1,0 +1,20 @@
+{
+  "project": "EchoSpectrum",
+  "mode": "dry-run",
+  "maxItems": 5,
+  "defaultBranch": "main",
+  "repoPriority": [
+    "ShannonBrayNC/EchoSpectrum",
+    "ShannonBrayNC/SignalForge",
+    "ShannonBrayNC/OpsHelm",
+    "ShannonBrayNC/ETS"
+  ],
+  "labels": {
+    "priority": ["priority-high", "priority-medium"],
+    "sprints": ["sprint-1", "sprint-2", "sprint-3"]
+  },
+  "reporting": {
+    "outputDir": "reports/christina/sprint-runner",
+    "formats": ["json", "md"]
+  }
+}
