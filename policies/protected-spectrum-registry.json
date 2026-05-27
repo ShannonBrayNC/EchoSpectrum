@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedUtc": "2026-05-27T00:00:00Z",
+  "notice": "Receive-only research guidance. This file is not legal advice.",
+  "protectedBands": [
+    {
+      "name": "Cellular and 5G",
+      "guidance": "No unauthorized transmission or interception.",
+      "rangesMHz": [
+        [600, 6000]
+      ]
+    },
+    {
+      "name": "Aviation and Navigation",
+      "guidance": "Avoid any unauthorized transmission.",
+      "rangesMHz": [
+        [108, 137],
+        [960, 1215],
+        [1559, 1610]
+      ]
+    },
+    {
+      "name": "Public Safety",
+      "guidance": "No interference, spoofing, or unauthorized monitoring.",
+      "rangesMHz": [
+        [150, 174],
+        [450, 470],
+        [4940, 4990]
+      ]
+    }
+  ],
+  "receiveOnlyResearchTargets": [
+    {
+      "name": "902-928 MHz ISM",
+      "centerMHz": 915
+    },
+    {
+      "name": "2.4 GHz ISM",
+      "centerMHz": 2440
+    },
+    {
+      "name": "5.8 GHz ISM",
+      "centerMHz": 5760
+    },
+    {
+      "name": "ADS-B Receive Only",
+      "centerMHz": 1090
+    }
+  ]
+}
