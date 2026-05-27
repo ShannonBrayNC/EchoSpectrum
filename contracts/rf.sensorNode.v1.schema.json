@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "rf.sensorNode.v1",
+  "type": "object",
+  "required": [
+    "nodeId",
+    "platform",
+    "sensorProfile",
+    "mode",
+    "healthStatus"
+  ],
+  "properties": {
+    "nodeId": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string",
+      "const": "EchoSpectrum"
+    },
+    "sensorProfile": {
+      "type": "string"
+    },
+    "antennaProfile": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["rx-only"]
+    },
+    "healthStatus": {
+      "type": "string",
+      "enum": ["healthy", "warning", "offline"]
+    },
+    "lastSeenUtc": {
+      "type": "string"
+    }
+  }
+}
