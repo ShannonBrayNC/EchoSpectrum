@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "rf.complianceDecision.v1",
+  "type": "object",
+  "required": [
+    "allowed",
+    "policyId",
+    "reason",
+    "timestampUtc"
+  ],
+  "properties": {
+    "allowed": {
+      "type": "boolean"
+    },
+    "policyId": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "timestampUtc": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string",
+      "const": "EchoSpectrum"
+    }
+  }
+}
