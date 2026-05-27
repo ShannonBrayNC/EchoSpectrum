@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "rf.researchSession.v1",
+  "type": "object",
+  "required": [
+    "sessionId",
+    "platform",
+    "mode",
+    "centerFrequencyHz",
+    "timestampUtc"
+  ],
+  "properties": {
+    "sessionId": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string",
+      "const": "EchoSpectrum"
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["rx-only"]
+    },
+    "centerFrequencyHz": {
+      "type": "number"
+    },
+    "sampleRateHz": {
+      "type": "number"
+    },
+    "sensorProfile": {
+      "type": "string"
+    },
+    "antennaProfile": {
+      "type": "string"
+    },
+    "timestampUtc": {
+      "type": "string"
+    }
+  }
+}
