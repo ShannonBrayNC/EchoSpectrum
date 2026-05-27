@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "incident.observation.v1",
+  "type": "object",
+  "required": [
+    "incidentId",
+    "platform",
+    "severity",
+    "summary",
+    "timestampUtc"
+  ],
+  "properties": {
+    "incidentId": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string",
+      "const": "EchoSpectrum"
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["informational", "warning", "critical"]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "timestampUtc": {
+      "type": "string"
+    },
+    "governanceMode": {
+      "type": "string",
+      "const": "rx-only"
+    }
+  }
+}
