@@ -1,0 +1,13 @@
+{
+  "profileName": "isolated-lab-environment",
+  "classification": "controlled",
+  "networkIsolationRequired": true,
+  "internetRestricted": true,
+  "rfShieldingRecommended": true,
+  "auditCaptureEnabled": true,
+  "replayCaptureEnabled": true,
+  "operatorIdentityRequired": true,
+  "ethicsReviewReferenceRequired": true,
+  "governanceMode": "authorized_research",
+  "etsPolicyEnforcement": true
+}
