@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0.0",
+  "profileName": "authorized-research",
+  "mode": "authorized_research",
+  "defaultPosture": "rx-only",
+  "description": "Locked research authorization profile for university, DoD, DARPA, and controlled laboratory partnerships.",
+  "partnerClasses": [
+    "university",
+    "defense-research",
+    "government-lab",
+    "controlled-spectrum-lab"
+  ],
+  "authorizedPartners": [
+    "Missouri University of Science and Technology",
+    "University of North Carolina",
+    "Elon University",
+    "DoD research partner",
+    "DARPA research partner"
+  ],
+  "requirements": {
+    "signedResearchAuthorizationRequired": true,
+    "principalInvestigatorRequired": true,
+    "etsTrustChainRequired": true,
+    "humanApprovalRequired": true,
+    "isolatedLabEnvironmentRequired": true,
+    "hardwareAllowlistRequired": true,
+    "spectrumScopeRequired": true,
+    "auditLoggingRequired": true,
+    "replayArchiveRequired": true
+  },
+  "capabilityPolicy": {
+    "productionDeployment": "rx-only",
+    "publicDemo": "synthetic-only",
+    "restrictedResearch": "approval-gated",
+    "simulationAllowed": true,
+    "liveTransmissionAllowedByDefault": false
+  },
+  "blockedOutsideAuthorizedLab": [
+    "jamming",
+    "packet_injection",
+    "deauthentication",
+    "imsi_catcher_workflows",
+    "autonomous_rf_transmission",
+    "offensive_rf_operations"
+  ],
+  "allowedResearchMethods": [
+    "synthetic_simulation",
+    "offline_waveform_analysis",
+    "replay_analysis",
+    "receive_only_observation",
+    "controlled_lab_emulation",
+    "governance_policy_testing"
+  ]
+}
