@@ -1,27 +1,7 @@
-# Environment Profiles
+# EchoSpectrum Environment Configuration
 
-EchoSpectrum supports environment-separated deployment profiles.
+EchoSpectrum environment configuration is limited to local development and synthetic simulation.
 
-## Planned Environments
+Do not store secrets, tenant identifiers, subscription identifiers, credentials, customer data, lock codes, payment data, private contracts, or regulated operational data in this directory.
 
-| Environment | Purpose |
-|---|---|
-| development | local observatory development |
-| test | CI validation and replay testing |
-| staging | distributed mesh validation |
-| production | operational observatory deployments |
-
-## Governance Requirements
-
-Every environment must:
-- preserve RX-only posture
-- propagate ETS metadata
-- maintain replay auditability
-- support SignalForge orchestration
-
-## Future Enhancements
-
-- Azure Key Vault integration
-- environment-specific telemetry retention
-- deployment profile manifests
-- distributed node enrollment
+Environment files must not enable transmit, jamming, spoofing, interference, exploitation, or autonomous civic escalation.

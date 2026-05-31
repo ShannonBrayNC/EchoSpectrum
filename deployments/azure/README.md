@@ -1,25 +1,7 @@
-# Azure Deployment
+# EchoSpectrum Azure Deployment Notes
 
-EchoSpectrum Azure deployment targets:
+No Azure deployment target is currently enabled for EchoSpectrum.
 
-- Azure Container Apps
-- Azure Static Web Apps
-- Azure PostgreSQL Flexible Server
-- Azure Blob Storage
-- Azure Application Insights
+This directory exists as a placeholder for future human-approved deployment planning only. Any future Azure deployment work must preserve the receive-only and synthetic-only safety boundary and must be reviewed before implementation.
 
-## Governance Requirements
-
-All deployments must:
-- preserve RX-only operation
-- maintain ETS governance metadata
-- preserve auditability
-- support SignalForge orchestration
-
-## Planned Infrastructure
-
-- observatory UI hosting
-- replay archive storage
-- telemetry persistence
-- distributed node coordination
-- Application Insights monitoring
+Do not add deployment credentials, subscription identifiers, tenant identifiers, secrets, or production configuration here.
