@@ -39,3 +39,10 @@ python scripts/run_synthetic_simulation.py
 ```
 
 Generated events are intended for downstream validation by SignalForge, ETS, Christina, OpsHelm, and Lantern-Civic.
+
+## SignalForge Manifest
+
+EchoSpectrum includes `signalforge.manifest.json` to declare its Lantern Protocol role, safety posture, and cross-product integration boundaries.
+
+The manifest keeps EchoSpectrum scoped as a supporting service for passive spectrum observability and synthetic simulation. It does not authorize transmit, jamming, spoofing, interference, autonomous escalation, or deployment behavior.
+

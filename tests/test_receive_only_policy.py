@@ -16,6 +16,8 @@ class TestReceiveOnlyPolicy(unittest.TestCase):
         root = Path(__file__).resolve().parents[1]
         scanned = []
         for path in root.rglob('*'):
+            if path == Path(__file__).resolve():
+                continue
             if path.is_file() and path.suffix in {'.py', '.md', '.yml', '.yaml'}:
                 text = path.read_text(encoding='utf-8', errors='ignore')
                 scanned.append(str(path.relative_to(root)))
@@ -33,3 +35,5 @@ class TestReceiveOnlyPolicy(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
